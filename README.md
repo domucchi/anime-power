@@ -1,4 +1,4 @@
-# @anime-power/core
+# @domucchi/anime-power
 
 A powerful TypeScript library for anime utilities and calculations.
 
@@ -15,16 +15,16 @@ A powerful TypeScript library for anime utilities and calculations.
 
 ```bash
 # Using Bun
-bun add @anime-power/core
+bun add @domucchi/anime-power
 
 # Using npm
-npm install @anime-power/core
+npm install @domucchi/anime-power
 
 # Using yarn
-yarn add @anime-power/core
+yarn add @domucchi/anime-power
 
 # Using pnpm
-pnpm add @anime-power/core
+pnpm add @domucchi/anime-power
 ```
 
 ## Usage
@@ -41,7 +41,7 @@ import {
   PowerLevel,
   type AnimeCharacter,
   type AnimeSeries,
-} from '@anime-power/core';
+} from '@domucchi/anime-power';
 
 // Use sample data or create your own
 const characters = SAMPLE_CHARACTERS;
@@ -73,7 +73,7 @@ console.log(`Power ranking for 9000: ${getPowerRanking(9000)}`);
 ### Default Import (All-in-One)
 
 ```typescript
-import AnimePower from '@anime-power/core';
+import AnimePower from '@domucchi/anime-power';
 
 // Access everything through the API object
 const characters = AnimePower.SAMPLE_CHARACTERS;
@@ -89,7 +89,7 @@ console.log(`Power ranking: ${ranking}`);
 ### Working with Custom Data
 
 ```typescript
-import { type AnimeCharacter, calculateTotalPower } from '@anime-power/core';
+import { type AnimeCharacter, calculateTotalPower } from '@domucchi/anime-power';
 
 // Create custom characters
 const myCharacters: AnimeCharacter[] = [
@@ -192,7 +192,7 @@ console.log(`My characters total power: ${totalPower}`);
 The library also provides a default export that includes all functions, types, and data:
 
 ```typescript
-import AnimePower from '@anime-power/core'
+import AnimePower from '@domucchi/anime-power'
 
 // Access everything through the API object
 const characters = AnimePower.SAMPLE_CHARACTERS
